@@ -36,14 +36,16 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         if(Objects.isNull(user)){
             throw new RuntimeException("用户名或密码错误");
         }
-        //TODO 根据用户查询权限信息 添加到LoginUser中，先暂时写死
-        List<String> permissionKeyList =  menuMapper.selectPermsByUserId(user.getId());
-//        //测试写法
-//        List<String> list = new ArrayList<>(Arrays.asList("test"));
 
+        //TODO 根据用户查询权限信息 添加到LoginUser中，先暂时写死
         //封装成UserDetails对象返回
-//        return new LoginUser(user);
-//        return new LoginUser(user,list);
+        //return new LoginUser(user);
+
+        //测试写法
+        //List<String> list = new ArrayList<>(Arrays.asList("test"));
+        //return new LoginUser(user,list);
+
+        List<String> permissionKeyList =  menuMapper.selectPermsByUserId(user.getId());
         return new LoginUser(user,permissionKeyList);
     }
 }
