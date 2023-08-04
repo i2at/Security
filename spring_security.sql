@@ -11,7 +11,7 @@
  Target Server Version : 50701
  File Encoding         : 65001
 
- Date: 04/08/2023 09:12:33
+ Date: 04/08/2023 09:30:27
 */
 
 SET NAMES utf8mb4;
@@ -111,7 +111,7 @@ CREATE TABLE `sys_user`  (
 -- ----------------------------
 -- Records of sys_user
 -- ----------------------------
-INSERT INTO `sys_user` VALUES (3, 'megallmx', 'megallmx', '$2a$10$le2ua8y10X.jTfXZ2uMmMec2Blu/HSlQIkdGk4fVtQ4Z8BbSlhB4i', '0', '2548928007@qq.com', '18779579999', '0', NULL, '1', NULL, NULL, NULL, NULL, 0);
+INSERT INTO `sys_user` VALUES (3, 'megallmx', 'megallmx', '$2a$10$le2ua8y10X.jTfXZ2uMmMec2Blu/HSlQIkdGk4fVtQ4Z8BbSlhB4i', '0', 'hi@gmail.com', '1800000000', '0', NULL, '1', NULL, NULL, NULL, NULL, 0);
 
 -- ----------------------------
 -- Table structure for sys_user_role
